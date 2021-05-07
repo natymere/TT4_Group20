@@ -14,28 +14,28 @@ class NavbarComponent extends Component {
     this.isLoggedIn = this.props.isLoggedIn;
   }
 
-  render() { 
-      if (this.isLoggedIn) {
-        return (      
-          <Navbar bg="light" expand="lg" className="">
-            <Navbar.Brand href="/Home">E-Wallet</Navbar.Brand>
-            <Nav>
-              <Nav.Link href="/Transaction">Transaction</Nav.Link>
-              <Nav.Link href="/Transactionhistory">Transaction History</Nav.Link>
-            </Nav>
-            <Button inline className="float-right mr-auto" variant="outline-primary">
-              <Link style={{float: 'right'}} to="/Home" >Logout</Link>
-            </Button>
-          </Navbar>);
-      } else {
-          return (
-            <Navbar bg="light" expand="lg" className="justify-content-between">
-            <Navbar.Brand href="/Home">E-Wallet</Navbar.Brand>
-            <Button inline className="float-right" variant="outline-primary">
-                <Link style={{float: 'right'}} to="/Login" >Login</Link>
-            </Button>
-          </Navbar>);
-      }
+  render() {
+    if (this.isLoggedIn) {
+      return (
+        <Navbar bg="light" expand="lg" className="">
+          <Navbar.Brand href="/Home">E-Wallet</Navbar.Brand>
+          <Nav>
+            <Nav.Link href="/Transaction">Transaction</Nav.Link>
+            <Nav.Link href="/Transactionhistory">Transaction History</Nav.Link>
+          </Nav>
+          <Button inline className="float-right mr-auto" variant="outline-primary">
+            <Link style={{ float: 'right' }} to="/Home" >Logout</Link>
+          </Button>
+        </Navbar>);
+    } else {
+      return (
+        <Navbar bg="light" expand="lg" className="justify-content-between">
+          <Navbar.Brand href="/Home">E-Wallet</Navbar.Brand>
+          <Button inline className="float-right" variant="outline-primary">
+            <Link style={{ float: 'right' }} to="/Login" >Login</Link>
+          </Button>
+        </Navbar>);
+    }
 
   }
 }
