@@ -19,7 +19,7 @@ function App() {
           <Route exact path="/Login" component={LoginPage} />
           <Route exact path="/Transactionhistory" component={TransactionHistory} />
           <Route exact path="/Transaction" component={TransactionPage} />
-          <AuthenticatedRoute exact path="/home" component={Home} />
+          <Route exact path="/home" component={Home} />
         </Switch>
       </Router>
     </div>
