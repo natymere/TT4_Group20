@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../TransactionHistory.css";
+// import "../TransactionHistory.css";
 
 export default function TransactionHistoryItem() {
   return (

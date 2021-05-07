@@ -1,5 +1,5 @@
 import React from "react";
-import "../TransactionHistory.css";
+// import "../TransactionHistory.css";
 
 export default function TransactionHistoryItem({ transaction }) {
   const dateTime = new Date(transaction.datetime * 1000).toLocaleString();
