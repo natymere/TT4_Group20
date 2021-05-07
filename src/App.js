@@ -6,9 +6,10 @@ import TransactionHistory from './components/TransactionHistory';
 import TransactionPage from './components/TransactionPage';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import AuthenticatedRoute from './components/AuthenticatedRoute';
+
 
 function App() {
   return (
